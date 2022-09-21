@@ -3,11 +3,11 @@ body{
   height: 100%;
   margin: 0;
   font-family: Inter, sans-serif;
-  font-size: 1.3vw;
+  font-size: 120%;
   color: #FFFFFF;
 }
 img{
-  width: 2em;
+  width: inherit;
   height: inherit;
 }
 a{
@@ -30,6 +30,8 @@ input:focus{
 }
 .Header{
   width: inherit;
+  position: fixed;
+  z-index: 1;
   height: 4.5em;
   background-color: #020202;
   /**background-color é #020202**/
@@ -42,7 +44,8 @@ input:focus{
 }
 .Banner{
   width: inherit;
-  height: 39em;
+  height: 42em;
+  padding-top: 2em;
   background-color: #070707FA;
   /**background-color é #070707FA**/
   font-style: Medium;
@@ -85,9 +88,19 @@ input:focus{
   display: flex;
 }
 .Footer{
-  width: inherit  ;
+  width: 65.4em;
   height: 20em;
   background-color: #101010;
+  padding-left: 3em;
+  display: flex;
+}
+.GrandFinale{
+  background-color: #161616;
+  width: inherit;
+  height: 3em;
+  color: gray;
+  text-align: center;
+  padding-top: 1em;
 }
 .HeaderEsquerda{
   float: left;
@@ -114,7 +127,7 @@ input:focus{
 }
 .BannerSuperior{
   width: 50%;
-  height: 16em;
+  height: 22em;
   background-color: transparent;
   text-align: left;
   display: block;
@@ -165,15 +178,17 @@ input:focus{
 .textoEcaixa{
   margin: 1em;
   padding: 0.3em;
-  border: 0.1em solid aliceblue;
+  border: 0.1em solid transparent;
+  border-radius: 0.5em;
+  background-color: #FFFFFF;
   bottom: 0.1em;
   position: relative;
   bottom: 0.6em;
   font-weight: bold;
-  color: #FFFFFF;
+  color: black;
 }
 .textoBanner{
-  font-size: 3em;
+  font-size: 6.2em;
   font-weight: bold;
   background: -webkit-linear-gradient(top left, #A020F0 30%, #004AAD 100%);
   -webkit-background-clip: text;
@@ -183,7 +198,7 @@ input:focus{
   font-family: Inter, sans-serif;
   width: max-content;
   background-color: #8D41BDCC;
-  border-radius: 1em;
+  border-radius: 0.3em;
   padding: 0.8em;
   position: relative;
   top: 2em;
@@ -193,7 +208,7 @@ input:focus{
   font-size: 100%;
   padding-left: 7%;
   padding-right: 7%;
-  text-align: center;
+  text-align: left;
 }
 .imagens{
   height: 3em;
@@ -256,4 +271,10 @@ input:focus{
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+.LogoFooter{
+  width: 8em;
+  height: 15em;
+  padding-top: 2em;
+  padding-right: 6em;
 }
